@@ -78,6 +78,8 @@
     UIImage *image = [self.images objectAtIndex:[self randomIndex:[self.images count]]];
     
     JRMFloatingImageView *floatingImageView = [[JRMFloatingImageView alloc] initWithImage:image];
+
+    floatingImageView.tintColor = self.tintColor;
     
     if (self.varyAlpha) {
         floatingImageView.alpha = [self randomFloatBetween:.1 and:1];
