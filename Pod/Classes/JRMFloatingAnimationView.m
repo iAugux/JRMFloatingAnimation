@@ -80,6 +80,7 @@
     JRMFloatingImageView *floatingImageView = [[JRMFloatingImageView alloc] initWithImage:image];
 
     floatingImageView.tintColor = self.tintColor;
+    floatingImageView.tag = self.tag;
     
     if (self.varyAlpha) {
         floatingImageView.alpha = [self randomFloatBetween:.1 and:1];
